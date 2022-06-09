@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaFacebook } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -13,13 +13,68 @@ const Navbar = () => {
       </div>
 
       {/* menu */}
-
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Experince</li>
-        <li>Contact</li>
+        <li>
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="hover:border-sky-400 border-transparent border-b-[3px]"
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="hover:border-sky-400 border-transparent border-b-[3px]"
+          >
+            About
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="hover:border-sky-400 border-transparent border-b-[3px]"
+          >
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="work"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="hover:border-sky-400 border-transparent border-b-[3px]"
+          >
+            Experince
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="hover:border-sky-400 border-transparent border-b-[3px]"
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* Hamburger */}
@@ -48,7 +103,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://www.facebook.com/tnpsp.ploy/"
             >
               Facebook <FaFacebook size={30} />
             </a>
@@ -56,7 +111,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://github.com/ploy-thanaporn"
             >
               Github <FaGithub size={30} />
             </a>
@@ -64,17 +119,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://mail.google.com/"
             >
               Email <AiOutlineMail size={30} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
-              Resume <BsFillPersonFill size={30} />
             </a>
           </li>
         </ul>
