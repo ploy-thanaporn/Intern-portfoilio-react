@@ -26,11 +26,6 @@ const Work = () => {
                 Laravel CRUD
               </span>
               <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
                 <a href="https://github.com/ploy-thanaporn/laravelCRUD_project">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
@@ -48,11 +43,6 @@ const Work = () => {
                 Covid Website
               </span>
               <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
                 <a href="https://github.com/ploy-thanaporn/inx447-projectCovid">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
